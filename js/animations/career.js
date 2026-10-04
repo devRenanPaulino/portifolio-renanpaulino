@@ -22,7 +22,13 @@ export function initCareerScroll({ base, progress, car, length, sectors, setSect
 
   gsap
     .timeline({
-      scrollTrigger: { trigger: ".sectors", start: "top 60%", end: "bottom 70%", scrub: 1 },
+      scrollTrigger: {
+        trigger: sectors[0],
+        endTrigger: sectors[sectors.length - 1],
+        start: "top 60%",
+        end: "bottom 70%",
+        scrub: 1,
+      },
     })
     .to(state, { p: CAR_END, ease: "none", onUpdate: place });
 
@@ -44,6 +50,43 @@ export function initCareerScroll({ base, progress, car, length, sectors, setSect
         if (self.isActive) setSector(index);
       },
     });
+  });
+
+  // Mobile: a pista fica com opacidade total enquanto não há texto na tela e esmaece por
+  // trás dele. Os dois fades acontecem nos espaços vazios, antes de o primeiro setor entrar
+  // e depois de o último sair, para a pista nunca ficar nítida sob o texto.
+  const MOBILE_DIM = 0.28;
+  gsap.matchMedia().add("(max-width: 900px)", () => {
+    const first = sectors[0];
+    const last = sectors[sectors.length - 1];
+    gsap.set(".circuit", { opacity: 1 });
+    gsap.to(".circuit", {
+      opacity: MOBILE_DIM,
+      ease: "power1.inOut",
+      scrollTrigger: {
+        trigger: first,
+        start: () => `top top+=${innerHeight * 1.35}`,
+        end: () => `top top+=${innerHeight * 1.05}`,
+        scrub: 0.6,
+        invalidateOnRefresh: true,
+      },
+    });
+    gsap.fromTo(
+      ".circuit",
+      { opacity: MOBILE_DIM },
+      {
+        opacity: 1,
+        ease: "power1.inOut",
+        immediateRender: false,
+        scrollTrigger: {
+          trigger: last,
+          start: () => `bottom top+=${innerHeight * 0.05}`,
+          end: () => `bottom top-=${innerHeight * 0.5}`,
+          scrub: 0.6,
+          invalidateOnRefresh: true,
+        },
+      },
+    );
   });
 
   gsap.from(".circuit svg", {

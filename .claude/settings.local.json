@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cat)",
+      "Bash(node /tmp/r.mjs)",
+      "Bash(node scripts/build.mjs)",
+      "Bash(node /tmp/n.mjs)",
+      "Bash(sed -n '45,46p' js/config/projects.js | od -c | head; ls /tmp/n.mjs; pwd)",
+      "Read(//tmp/**)",
+      "Bash(node /tmp/e.mjs)",
+      "Bash(sed -n '/max-width: 900px/,$p' css/sections/career.css)",
+      "Bash(node /tmp/f.mjs)",
+      "Bash(node /tmp/g.mjs)",
+      "Bash(node --check js/animations/career.js)",
+      "Bash(node /tmp/h.mjs)",
+      "Bash(sed -i 's/padding-block: 90svh;/padding-block: 150svh 160svh;/' css/sections/career.css)",
+      "Bash(sed -i 's/innerHeight \\\\* 1.7}/innerHeight * 1.35}/; s/innerHeight \\\\* 0.55}/innerHeight * 0.5}/' js/animations/career.js)"
+    ]
+  }
+}

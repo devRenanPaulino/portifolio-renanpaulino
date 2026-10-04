@@ -186,23 +186,30 @@
   .career {
     grid-template-columns: 1fr;
   }
+  /* Pista fixa atrás do texto; a opacidade é animada no scroll (js/animations/career.js). */
   .circuit {
+    grid-area: 1 / 1;
+    align-self: start;
     position: sticky;
     top: 0;
-    height: auto;
-    z-index: 2;
-    background: linear-gradient(var(--ink) 80%, transparent);
-    padding-block: 70px 1rem;
+    height: 100svh;
+    z-index: 0;
+    pointer-events: none;
+    padding-block: 80px 30px;
   }
   .circuit svg {
-    max-width: 220px;
-    max-height: 34svh;
+    max-width: 320px;
+    max-height: 70svh;
   }
   .circuit-hud {
     display: none;
   }
   .sectors {
-    padding-block: 1rem 4rem;
+    grid-area: 1 / 1;
+    position: relative;
+    z-index: 1;
+    /* espaço vazio no começo e no fim para a pista aparecer sozinha */
+    padding-block: 125svh 140svh;
   }
   .sector-cols {
     grid-template-columns: 1fr;
