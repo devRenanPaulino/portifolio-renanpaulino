@@ -1,0 +1,12 @@
+{
+  "name": "portfolio-renan",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Portfólio de Renan Paulino",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "watch": "node scripts/build.mjs --watch",
+    "start": "npx serve ."
+  }
+}

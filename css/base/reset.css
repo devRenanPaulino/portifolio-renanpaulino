@@ -1,0 +1,41 @@
+/* Reset e estilos globais dos elementos. */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  background: var(--ink);
+}
+body {
+  margin: 0;
+  background: var(--ink);
+  color: var(--bone);
+  font-family: var(--f-body);
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+::selection {
+  background: var(--volt);
+  color: var(--volt-ink);
+}
+:focus-visible {
+  outline: 2px solid var(--volt);
+  outline-offset: 4px;
+  border-radius: 4px;
+}

@@ -1,0 +1,20 @@
+/* Rodapé. */
+footer {
+  border-top: 1px solid var(--line);
+  padding-block: 1.6rem calc(1.6rem + env(safe-area-inset-bottom, 0px));
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  color: var(--mute);
+}
+.top {
+  background: none;
+  border: 0;
+  color: var(--bone);
+  font: inherit;
+  padding: 0;
+}
+.top:hover {
+  color: var(--volt);
+}

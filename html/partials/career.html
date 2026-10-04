@@ -1,0 +1,206 @@
+<section id="carreira" class="sec" style="padding-bottom: 0">
+  <div class="wrap">
+    <div class="sec-head" style="margin-bottom: 0">
+      <div>
+        <span class="eyebrow">Mapa de carreira</span>
+        <h2 style="margin-top: 1rem">A volta<br />completa</h2>
+      </div>
+      <p class="lead">
+        Cinco setores, de Estagiário a Arquiteto de Software. Role a página e acompanhe o carro pela
+        pista.
+      </p>
+    </div>
+    <div class="career">
+      <div class="circuit">
+        <svg viewBox="-30 -10 460 540" id="circuitSvg" aria-hidden="true">
+          <path
+            class="track-base"
+            id="trackBase"
+            d="M330 470 C250 482 150 480 92 458 C40 438 38 384 78 362 C118 340 112 300 72 280 C32 260 40 196 92 188 L250 168 C302 160 322 122 292 92 C262 62 204 70 182 100 C160 130 120 124 110 92 C100 52 142 30 200 30 C300 30 372 72 372 150 C372 230 302 250 262 270 C222 290 230 330 282 340 C342 352 372 382 362 422 C354 452 348 466 330 470 Z"
+          />
+          <path
+            class="track-edge"
+            d="M330 470 C250 482 150 480 92 458 C40 438 38 384 78 362 C118 340 112 300 72 280 C32 260 40 196 92 188 L250 168 C302 160 322 122 292 92 C262 62 204 70 182 100 C160 130 120 124 110 92 C100 52 142 30 200 30 C300 30 372 72 372 150 C372 230 302 250 262 270 C222 290 230 330 282 340 C342 352 372 382 362 422 C354 452 348 466 330 470 Z"
+          />
+          <path
+            class="track-prog"
+            id="trackProg"
+            d="M330 470 C250 482 150 480 92 458 C40 438 38 384 78 362 C118 340 112 300 72 280 C32 260 40 196 92 188 L250 168 C302 160 322 122 292 92 C262 62 204 70 182 100 C160 130 120 124 110 92 C100 52 142 30 200 30 C300 30 372 72 372 150 C372 230 302 250 262 270 C222 290 230 330 282 340 C342 352 372 382 362 422 C354 452 348 466 330 470 Z"
+          />
+          <g class="finish" transform="translate(326 458)">
+            <rect x="0" y="0" width="4" height="4" />
+            <rect x="4" y="4" width="4" height="4" />
+            <rect x="0" y="8" width="4" height="4" />
+            <rect x="4" y="12" width="4" height="4" />
+            <rect x="0" y="16" width="4" height="4" />
+            <rect x="4" y="20" width="4" height="4" />
+          </g>
+          <text x="210" y="510">Reta dos boxes</text>
+          <text x="-20" y="330">S do Senna</text>
+          <text x="160" y="160">Reta oposta</text>
+          <text x="300" y="215">Junção</text>
+          <g id="markers"></g>
+          <g id="car">
+            <rect x="-11" y="-6" width="22" height="12" rx="4" fill="#d4ff2a" />
+            <rect x="2" y="-4" width="5" height="8" rx="1.5" fill="#101400" />
+            <circle cx="0" cy="0" r="18" fill="none" stroke="#d4ff2a" stroke-opacity=".35" />
+          </g>
+        </svg>
+        <div class="circuit-hud mono">
+          <span style="color: var(--mute)">Setor</span><b id="hudSector">S1</b
+          ><span id="hudName">Júnior</span>
+        </div>
+      </div>
+      <div class="sectors">
+        <article class="sector on" data-at="0.08">
+          <div class="sector-top">
+            <span class="sector-code">Setor 1 · Agora</span
+            ><span class="here"><span class="live"></span>Você está aqui</span>
+          </div>
+          <h3>Desenvolvedor Estagiário</h3>
+          <p>
+            Estagiário na Telefônica Vivo, aprendendo na prática com full stack, com foco em
+            front-end: entregar soluções internas, absorver boas práticas e evoluir com o time.
+          </p>
+          <div class="sector-cols">
+            <div>
+              <h4>Soft skills em foco</h4>
+              <ul>
+                <li>Comunicação clara e empática</li>
+                <li>Aprendizado contínuo</li>
+                <li>Autonomia e proatividade</li>
+                <li>Adaptabilidade</li>
+              </ul>
+            </div>
+            <div class="road">
+              <h4>O que eu uso hoje</h4>
+              <ul>
+                <li>React e Next.js</li>
+                <li>Python (FastAPI) e Java (Spring)</li>
+                <li>Git + GitHub</li>
+                <li>Figma e UI/UX</li>
+                <li>Oracle Database e MySQL</li>
+                <li>Noções de Azure</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article class="sector" data-at="0.30">
+          <div class="sector-top"><span class="sector-code">Setor 2 · Próximo passo</span></div>
+          <h3>Desenvolvedor Júnior</h3>
+          <p>
+            Consolidar boas práticas como desenvolvedor full stack, aprofundar React e
+            acessibilidade e entregar projetos com foco em performance e usabilidade real.
+          </p>
+          <div class="sector-cols">
+            <div>
+              <h4>Soft skills em foco</h4>
+              <ul>
+                <li>Colaboração com o time</li>
+                <li>Pensamento crítico</li>
+                <li>Gestão de tempo e prioridades</li>
+              </ul>
+            </div>
+            <div class="road">
+              <h4>Roadmap</h4>
+              <ul>
+                <li>Flutter</li>
+                <li>WCAG e acessibilidade</li>
+                <li>TypeScript</li>
+                <li>RESTful API</li>
+                <li>DevOps na Azure e esteiras CI/CD</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article class="sector" data-at="0.52">
+          <div class="sector-top"><span class="sector-code">Setor 3 · Médio prazo</span></div>
+          <h3>Desenvolvedor Pleno</h3>
+          <p>
+            Construir APIs REST sobre uma base bem estruturada, trabalhar com testes e contribuir em
+            decisões de arquitetura e UX.
+          </p>
+          <div class="sector-cols">
+            <div>
+              <h4>Soft skills em foco</h4>
+              <ul>
+                <li>Colaboração com times multidisciplinares</li>
+                <li>Gestão de tempo e prioridades</li>
+                <li>Mentoria de colegas iniciantes</li>
+              </ul>
+            </div>
+            <div class="road">
+              <h4>Roadmap</h4>
+              <ul>
+                <li>Next.js + SSR</li>
+                <li>Testes automatizados</li>
+                <li>PostgreSQL</li>
+                <li>Docker</li>
+                <li>Pipelines CI/CD na Azure</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article class="sector" data-at="0.72">
+          <div class="sector-top"><span class="sector-code">Setor 4 · Futuro</span></div>
+          <h3>Desenvolvedor Sênior</h3>
+          <p>
+            Liderar soluções escaláveis, participar de decisões estratégicas de arquitetura e tornar
+            os produtos mais acessíveis, inclusivos e modernos.
+          </p>
+          <div class="sector-cols">
+            <div>
+              <h4>Soft skills em foco</h4>
+              <ul>
+                <li>Liderança técnica</li>
+                <li>Decisão estratégica</li>
+                <li>Visão sistêmica de produto</li>
+                <li>Comunicação com stakeholders</li>
+              </ul>
+            </div>
+            <div class="road">
+              <h4>Roadmap</h4>
+              <ul>
+                <li>Pipelines CI/CD avançados</li>
+                <li>TDD</li>
+                <li>Clean Architecture</li>
+                <li>Mensageria e GraphQL</li>
+                <li>Cloud (Azure)</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article class="sector" data-at="0.92">
+          <div class="sector-top"><span class="sector-code">Bandeirada · Longo prazo</span></div>
+          <h3>Arquiteto de Software</h3>
+          <p>
+            Desenhar arquiteturas robustas, sustentáveis e acessíveis, com foco em IA aplicada,
+            escalabilidade e integração entre times técnicos e de produto.
+          </p>
+          <div class="sector-cols">
+            <div>
+              <h4>Soft skills em foco</h4>
+              <ul>
+                <li>Visão de produto e negócio</li>
+                <li>Arquitetura de soluções escaláveis</li>
+                <li>Influência técnica e cultural</li>
+                <li>Liderança em inovação</li>
+              </ul>
+            </div>
+            <div class="road">
+              <h4>Roadmap</h4>
+              <ul>
+                <li>IA aplicada: RAG e LLMs</li>
+                <li>Bancos vetoriais</li>
+                <li>Workspaces e ambientes temporários (sandboxes)</li>
+                <li>Event-Driven Architecture</li>
+                <li>Domain-Driven Design</li>
+                <li>Cloud architecture</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>

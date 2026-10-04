@@ -1,0 +1,805 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Renan Paulino</title>
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+    <meta
+      name="description"
+      content="Renan Paulino, Desenvolvedor Full Stack com foco em Front-End, em São Paulo. Estagiário na Telefônica Vivo e estudante de ADS na FIAP."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Permanent+Marker&display=swap"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="cursor" aria-hidden="true"><span>VER</span></div>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <header class="nav" id="nav">
+      <div class="wrap nav-inner">
+        <a href="#topo" class="brand" aria-label="Renan Paulino, início">
+          <svg viewBox="0 0 40 40" aria-hidden="true">
+            <path
+              d="M6 6 L14 14 L20 9 L26 14 L34 6 L33 22 L20 35 L7 22 Z"
+              fill="none"
+              stroke="#d4ff2a"
+              stroke-width="2.4"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M14 20 L18 22 M26 20 L22 22"
+              stroke="#eef0e6"
+              stroke-width="2.4"
+              stroke-linecap="round"
+            />
+            <path d="M17 28 L20 30 L23 28" fill="none" stroke="#eef0e6" stroke-width="2" />
+          </svg>
+          RP
+        </a>
+        <nav class="nav-links" aria-label="Seções">
+          <a href="#estagio">Estágio</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#carreira">Carreira</a>
+          <a href="#skills">Skills</a>
+          <a href="#formacao">Formação</a>
+        </nav>
+        <a href="#contato" class="status magnet"><span class="live"></span>Disponível</a>
+      </div>
+    </header>
+
+    <main id="topo">
+      <section class="hero">
+        <div class="wrap">
+          <div class="hero-grid">
+            <h1 class="hero-name" aria-label="Renan Paulino">
+              <span class="row" aria-hidden="true">RENAN</span>
+              <span class="row outline" aria-hidden="true">PAULINO</span>
+            </h1>
+            <div class="hero-photo">
+              <div class="ring"></div>
+              <div class="disc">
+                <img
+                  src="assets/img/renan-redondo.webp"
+                  alt="Renan sorrindo, de camiseta azul do Instituto Proa"
+                  width="820"
+                  height="820"
+                />
+              </div>
+              <div class="sig" aria-hidden="true">Renan</div>
+            </div>
+            <div class="hero-side mono">
+              <span class="timer-label">Volta atual</span>
+              <span class="timer" id="timer">00:00.000</span>
+              <span class="scroll-cue"><i></i>Role</span>
+            </div>
+            <div class="hero-meta">
+              <span class="eyebrow">São Paulo · BR</span>
+              <p>
+                Desenvolvedor <strong>Full Stack</strong> com foco em <strong>Front-End</strong>.
+                Estagiário na Telefônica Vivo e estudante de Análise e Desenvolvimento de Sistemas na
+                FIAP.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker-track" data-speed="1">
+          <span>Front-End</span><span>Back-End</span><span>Python</span><span>Java</span
+          ><span>JavaScript</span><span>FastAPI</span><span>Spring</span><span>Next.js</span
+          ><span>React</span><span>Flutter</span><span>Oracle</span><span>Front-End</span
+          ><span>Back-End</span><span>Python</span><span>Java</span><span>JavaScript</span
+          ><span>FastAPI</span><span>Spring</span><span>Next.js</span><span>React</span
+          ><span>Flutter</span><span>Oracle</span>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="stats">
+          <div class="stat">
+            <b data-count="6">6</b><span class="mono">Projetos neste portfólio</span>
+          </div>
+          <div class="stat">
+            <b data-count="29">29</b><span class="mono">Repositórios no GitHub</span>
+          </div>
+          <div class="stat"><b data-count="10">10</b><span class="mono">Tecnologias que uso</span></div>
+          <div class="stat">
+            <b class="is-word"><em>Estágio</em></b
+            ><span class="mono">Telefônica Vivo · em curso</span>
+          </div>
+        </div>
+      </div>
+      <section class="sec" id="sobre">
+        <div class="wrap about">
+          <div>
+            <span class="eyebrow">Sobre</span>
+            <p class="manifesto" id="manifesto" style="margin-top: 1.6rem">
+              Interfaces modernas, funcionais e bem projetadas. Código é o meio. O impacto real está na
+              <span data-hl>experiência</span> de quem <span data-hl>usa</span>.
+            </p>
+            <div class="about-body">
+              <p>
+                Sou desenvolvedor e hoje estagio na Telefônica Vivo, trabalhando com full stack: FastAPI
+                no back-end e Next.js no front-end. O front-end é onde me sinto mais em casa, com grande
+                interesse por design de interfaces e experiência do usuário. Gosto de soluções visuais que
+                unam estética, usabilidade, acessibilidade e inovação.
+              </p>
+              <p>
+                Nos projetos acadêmicos fui da identidade visual ao deploy: pesquisa, fluxos no Figma,
+                front-end em React e JavaScript, back-end em Python e integração com IA. Na Raiz do Bem
+                atuei como full stack e também assumi papéis de produto, como Product Owner e gestor de
+                produto.
+              </p>
+              <p>
+                Hoje estou explorando front-end e back-end, com foco em código limpo, escalável e em
+                projetos com impacto real.
+              </p>
+            </div>
+          </div>
+          <aside class="about-side">
+            <div class="stage">
+              <img
+                src="assets/img/palco.webp"
+                alt="Renan falando ao microfone em um palco, com telão azul ao fundo"
+                width="620"
+                height="886"
+                loading="lazy"
+              />
+              <span class="tag">Ao vivo · apresentação</span>
+            </div>
+            <div class="about-card">
+              <span class="eyebrow">Mais sobre mim</span>
+              <dl>
+                <dt>Escritor preferido</dt>
+                <dd>Dostoiévski</dd>
+                <dt>Cantores preferidos</dt>
+                <dd>Emicida, BK, Sabotage, Kendrick Lamar</dd>
+                <dt>Localização</dt>
+                <dd>São Paulo, SP</dd>
+                <dt>Idiomas</dt>
+                <dd>Português · Inglês básico</dd>
+              </dl>
+            </div>
+          </aside>
+        </div>
+      </section>
+      <section class="sec" id="estagio" style="padding-top: 0">
+        <div class="wrap">
+          <div class="now">
+            <div class="now-main">
+              <span class="now-badge"><span class="live"></span>Cargo atual</span>
+              <h3>Estagiário<span>Telefônica Vivo</span></h3>
+              <p>
+                Sou estagiário na Telefônica Vivo e atuo em um time de Tech Enabler, onde desenvolvemos
+                soluções internas para acelerar a produtividade e agilizar processos, como os de upstream
+                e downstream.
+              </p>
+              <p>No dia a dia trabalho com full stack: FastAPI no back-end e Next.js no front-end.</p>
+            </div>
+            <div class="now-art" aria-hidden="true">
+              <canvas id="pulse"></canvas>
+              <div class="now-log">
+                <div><span>Empresa</span><b>Telefônica Vivo</b></div>
+                <div><span>Cargo</span><b>Estagiário</b></div>
+                <div><span>Time</span><b>Tech Enabler</b></div>
+                <div><span>Stack</span><b>FastAPI · Next.js</b></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="work" id="projetos">
+        <div class="work-pin">
+          <div class="wrap sec-head">
+            <div>
+              <span class="eyebrow">Projetos</span>
+              <h2 style="margin-top: 1rem">Projetos</h2>
+            </div>
+            <p class="lead">
+              Projetos que construí, do back-end ao visual. Clique em um card para ver os links e a minha
+              autocrítica sobre o projeto.
+            </p>
+          </div>
+          <div class="work-track" id="track">
+            <a
+              class="card view"
+              href="https://github.com/devRenanPaulino/ms-sandbox-manager"
+              data-project="sandbox"
+              target="_blank"
+              rel="noopener"
+            >
+              <div class="card-art">
+                <div class="art a-sandbox">
+                  <code>POST /messages</code>
+                  <span class="bubble in b1"></span>
+                  <span class="bubble out b2"></span>
+                  <span class="bubble in b3"></span>
+                </div>
+                <span class="card-num">P1</span><span class="card-go">↗</span>
+              </div>
+              <div class="card-body">
+                <div class="card-top">
+                  <h3>MS Sandbox Manager</h3>
+                </div>
+                <span class="role">Back-End · Microserviço</span>
+                <p>
+                  API de integração voltada ao WhatsApp. Centraliza canais de comunicação: envia
+                  mensagens, recebe webhooks, guarda o histórico e usa templates. Arquitetura limpa em
+                  camadas.
+                </p>
+                <div class="chips">
+                  <span>Python</span><span>FastAPI</span><span>MongoDB</span><span>Twilio</span
+                  ><span>Pytest</span>
+                </div>
+              </div>
+            </a>
+            <a
+              class="card view"
+              href="https://raiz-do-bem.vercel.app/"
+              data-project="raiz"
+              target="_blank"
+              rel="noopener"
+            >
+              <div class="card-art">
+                <div class="art a-raiz">
+                  <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+                    <g fill="none" stroke="#7fe08f" stroke-linecap="round">
+                      <path d="M200 40 C200 120 200 160 200 300" stroke-width="5" />
+                      <path d="M200 140 C160 170 120 180 80 240" stroke-width="3" />
+                      <path d="M200 160 C250 190 290 200 320 260" stroke-width="3" />
+                      <path d="M200 200 C180 230 150 250 140 300" stroke-width="2" />
+                      <path d="M200 210 C230 240 250 270 250 300" stroke-width="2" />
+                      <path d="M120 200 C100 210 80 205 60 215" stroke-width="1.5" opacity=".7" />
+                      <path d="M290 220 C310 225 330 220 350 230" stroke-width="1.5" opacity=".7" />
+                    </g>
+                    <circle cx="200" cy="44" r="26" fill="#7fe08f" />
+                    <circle cx="200" cy="44" r="12" fill="#0d1a10" />
+                  </svg>
+                </div>
+                <span class="card-num">P2</span><span class="card-go">↗</span>
+              </div>
+              <div class="card-body">
+                <div class="card-top">
+                  <h3>Raiz do Bem</h3>
+                  <span class="year">2025 – 2026</span>
+                </div>
+                <span class="role">Full Stack · UI/UX · Product Owner</span>
+                <p>
+                  Plataforma para a Turma do Bem. Atuei como full stack: conduzi a definição das
+                  funcionalidades, criei as interfaces e os fluxos de usuário e desenvolvi front-end e
+                  back-end.
+                </p>
+                <div class="chips">
+                  <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Figma</span
+                  ><span>Product Discovery</span>
+                </div>
+              </div>
+            </a>
+            <a
+              class="card view"
+              href="https://bikcraft-seven-alpha.vercel.app/"
+              data-project="bikcraft"
+              target="_blank"
+              rel="noopener"
+            >
+              <div class="card-art">
+                <div class="art a-bik"><i></i><i></i><b></b></div>
+                <span class="card-num">P3</span><span class="card-go">↗</span>
+              </div>
+              <div class="card-body">
+                <div class="card-top">
+                  <h3>Bikcraft</h3>
+                  <span class="year">2025</span>
+                </div>
+                <span class="role">Front-End</span>
+                <p>
+                  Site de bicicletas elétricas sob medida, construído a partir de um protótipo pronto, com
+                  atenção a fidelidade visual e responsividade.
+                </p>
+                <div class="chips">
+                  <span>HTML</span><span>CSS</span><span>JavaScript</span><span>NPM</span>
+                </div>
+              </div>
+            </a>
+            <a
+              class="card view"
+              href="https://eleven-gs.github.io/Front-End-Eleven/"
+              data-project="eleven"
+              target="_blank"
+              rel="noopener"
+            >
+              <div class="card-art">
+                <div class="art a-eleven"><i></i><b>11</b></div>
+                <span class="card-num">P4</span><span class="card-go">↗</span>
+              </div>
+              <div class="card-body">
+                <div class="card-top">
+                  <h3>Eleven</h3>
+                  <span class="year">2025</span>
+                </div>
+                <span class="role">Full-Stack · UI/UX · Gestor de produto</span>
+                <p>
+                  Plataforma de trilhas de aprendizado. Criei a identidade visual, o UX, a estrutura das
+                  trilhas e o desenvolvimento, com integração à API do Gemini.
+                </p>
+                <div class="chips">
+                  <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span
+                  ><span>API REST</span><span>Gemini</span>
+                </div>
+              </div>
+            </a>
+            <a
+              class="card view"
+              href="https://plataforma-rivalix.vercel.app/"
+              data-project="rivalix"
+              target="_blank"
+              rel="noopener"
+            >
+              <div class="card-art">
+                <div class="art a-rivalix"><i></i><b>RVX</b></div>
+                <span class="card-num">P5</span><span class="card-go">↗</span>
+              </div>
+              <div class="card-body">
+                <div class="card-top">
+                  <h3>Rivalix</h3>
+                  <span class="year">2025</span>
+                </div>
+                <span class="role">Front-End · UI/UX Designer</span>
+                <p>
+                  Plataforma gamer. Atuei como web designer, da criação da marca ao desenvolvimento em
+                  React.
+                </p>
+                <div class="chips">
+                  <span>React</span><span>Figma</span><span>HTML</span><span>CSS</span
+                  ><span>JavaScript</span>
+                </div>
+              </div>
+            </a>
+            <a
+              class="card view"
+              href="https://github.com/devRenanPaulino/Arquitetura-de-Software"
+              data-project="arquitetura"
+              target="_blank"
+              rel="noopener"
+            >
+              <div class="card-art">
+                <div class="art a-arq">
+                  <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+                    <g fill="none" stroke="#d4ff2a" stroke-width="2" opacity=".85">
+                      <rect x="40" y="110" width="70" height="44" rx="6" />
+                      <rect x="165" y="40" width="70" height="44" rx="6" />
+                      <rect x="165" y="180" width="70" height="44" rx="6" />
+                      <rect x="290" y="110" width="70" height="44" rx="6" />
+                      <path d="M110 132 L165 62 M110 132 L165 202 M235 62 L290 132 M235 202 L290 132" />
+                    </g>
+                    <g fill="#d4ff2a">
+                      <circle cx="200" cy="62" r="5" />
+                      <circle cx="200" cy="202" r="5" />
+                      <circle cx="75" cy="132" r="5" />
+                      <circle cx="325" cy="132" r="5" />
+                    </g>
+                  </svg>
+                </div>
+                <span class="card-num">P6</span><span class="card-go">↗</span>
+              </div>
+              <div class="card-body">
+                <div class="card-top">
+                  <h3>Arquitetura de Software</h3>
+                </div>
+                <span class="role">Documentação · Estudo</span>
+                <p>
+                  A evolução de uma arquitetura de um servidor único até multi-região: load balancer,
+                  replicação, cache, auto scaling, mensageria e CI/CD, com 16 diagramas.
+                </p>
+                <div class="chips">
+                  <span>System Design</span><span>Escalabilidade</span><span>Cache</span
+                  ><span>Mensageria</span>
+                </div>
+              </div>
+            </a>
+            <a
+              class="card view"
+              href="https://devrenanpaulino.github.io/Mapa-de-Carreira/"
+              data-project="mapa"
+              target="_blank"
+              rel="noopener"
+            >
+              <div class="card-art">
+                <div class="art a-mapa">
+                  <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+                    <g fill="none" stroke="#d4ff2a" opacity=".55">
+                      <path d="M-10 230 C80 180 140 260 220 200 S340 120 420 150" />
+                      <path d="M-10 200 C80 150 140 230 220 170 S340 90 420 120" opacity=".7" />
+                      <path d="M-10 170 C80 120 140 200 220 140 S340 60 420 90" opacity=".5" />
+                      <path d="M-10 140 C80 90 140 170 220 110 S340 30 420 60" opacity=".35" />
+                    </g>
+                    <g fill="#d4ff2a">
+                      <circle cx="60" cy="205" r="7" />
+                      <circle cx="160" cy="215" r="7" />
+                      <circle cx="250" cy="180" r="7" />
+                      <circle cx="350" cy="140" r="9" />
+                    </g>
+                  </svg>
+                </div>
+                <span class="card-num">P7</span><span class="card-go">↗</span>
+              </div>
+              <div class="card-body">
+                <div class="card-top">
+                  <h3>Mapa de Carreira</h3>
+                  <span class="year">2025</span>
+                </div>
+                <span class="role">Front-End · Planejamento pessoal</span>
+                <p>
+                  Meu roadmap de Estagiário a Arquiteto de Software, com hard skills, soft skills e
+                  trilhas de estudo. A base da seção Carreira desta página.
+                </p>
+                <div class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              </div>
+            </a>
+            <div class="card-end">
+              <span class="eyebrow">Mais projetos</span>
+              <h3>Mais 29 repositórios no GitHub</h3>
+              <p>
+                Exercícios de lógica em Java e JavaScript, estudos de HTML e CSS e projetos em equipe.
+              </p>
+              <a
+                class="btn magnet"
+                href="https://github.com/devRenanPaulino"
+                target="_blank"
+                rel="noopener"
+                >Abrir GitHub ↗</a
+              >
+            </div>
+          </div>
+          <div class="progress" aria-hidden="true"><i id="workProg"></i></div>
+        </div>
+      </section>
+      <section id="carreira" class="sec" style="padding-bottom: 0">
+        <div class="wrap">
+          <div class="sec-head" style="margin-bottom: 0">
+            <div>
+              <span class="eyebrow">Mapa de carreira</span>
+              <h2 style="margin-top: 1rem">A volta<br />completa</h2>
+            </div>
+            <p class="lead">
+              Cinco setores, de Estagiário a Arquiteto de Software. Role a página e acompanhe o carro pela
+              pista.
+            </p>
+          </div>
+          <div class="career">
+            <div class="circuit">
+              <svg viewBox="-30 -10 460 540" id="circuitSvg" aria-hidden="true">
+                <path
+                  class="track-base"
+                  id="trackBase"
+                  d="M330 470 C250 482 150 480 92 458 C40 438 38 384 78 362 C118 340 112 300 72 280 C32 260 40 196 92 188 L250 168 C302 160 322 122 292 92 C262 62 204 70 182 100 C160 130 120 124 110 92 C100 52 142 30 200 30 C300 30 372 72 372 150 C372 230 302 250 262 270 C222 290 230 330 282 340 C342 352 372 382 362 422 C354 452 348 466 330 470 Z"
+                />
+                <path
+                  class="track-edge"
+                  d="M330 470 C250 482 150 480 92 458 C40 438 38 384 78 362 C118 340 112 300 72 280 C32 260 40 196 92 188 L250 168 C302 160 322 122 292 92 C262 62 204 70 182 100 C160 130 120 124 110 92 C100 52 142 30 200 30 C300 30 372 72 372 150 C372 230 302 250 262 270 C222 290 230 330 282 340 C342 352 372 382 362 422 C354 452 348 466 330 470 Z"
+                />
+                <path
+                  class="track-prog"
+                  id="trackProg"
+                  d="M330 470 C250 482 150 480 92 458 C40 438 38 384 78 362 C118 340 112 300 72 280 C32 260 40 196 92 188 L250 168 C302 160 322 122 292 92 C262 62 204 70 182 100 C160 130 120 124 110 92 C100 52 142 30 200 30 C300 30 372 72 372 150 C372 230 302 250 262 270 C222 290 230 330 282 340 C342 352 372 382 362 422 C354 452 348 466 330 470 Z"
+                />
+                <g class="finish" transform="translate(326 458)">
+                  <rect x="0" y="0" width="4" height="4" />
+                  <rect x="4" y="4" width="4" height="4" />
+                  <rect x="0" y="8" width="4" height="4" />
+                  <rect x="4" y="12" width="4" height="4" />
+                  <rect x="0" y="16" width="4" height="4" />
+                  <rect x="4" y="20" width="4" height="4" />
+                </g>
+                <text x="210" y="510">Reta dos boxes</text>
+                <text x="-20" y="330">S do Senna</text>
+                <text x="160" y="160">Reta oposta</text>
+                <text x="300" y="215">Junção</text>
+                <g id="markers"></g>
+                <g id="car">
+                  <rect x="-11" y="-6" width="22" height="12" rx="4" fill="#d4ff2a" />
+                  <rect x="2" y="-4" width="5" height="8" rx="1.5" fill="#101400" />
+                  <circle cx="0" cy="0" r="18" fill="none" stroke="#d4ff2a" stroke-opacity=".35" />
+                </g>
+              </svg>
+              <div class="circuit-hud mono">
+                <span style="color: var(--mute)">Setor</span><b id="hudSector">S1</b
+                ><span id="hudName">Júnior</span>
+              </div>
+            </div>
+            <div class="sectors">
+              <article class="sector on" data-at="0.08">
+                <div class="sector-top">
+                  <span class="sector-code">Setor 1 · Agora</span
+                  ><span class="here"><span class="live"></span>Você está aqui</span>
+                </div>
+                <h3>Desenvolvedor Estagiário</h3>
+                <p>
+                  Estagiário na Telefônica Vivo, aprendendo na prática com full stack, com foco em
+                  front-end: entregar soluções internas, absorver boas práticas e evoluir com o time.
+                </p>
+                <div class="sector-cols">
+                  <div>
+                    <h4>Soft skills em foco</h4>
+                    <ul>
+                      <li>Comunicação clara e empática</li>
+                      <li>Aprendizado contínuo</li>
+                      <li>Autonomia e proatividade</li>
+                      <li>Adaptabilidade</li>
+                    </ul>
+                  </div>
+                  <div class="road">
+                    <h4>O que eu uso hoje</h4>
+                    <ul>
+                      <li>React e Next.js</li>
+                      <li>Python (FastAPI) e Java (Spring)</li>
+                      <li>Git + GitHub</li>
+                      <li>Figma e UI/UX</li>
+                      <li>Oracle Database e MySQL</li>
+                      <li>Noções de Azure</li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+              <article class="sector" data-at="0.30">
+                <div class="sector-top"><span class="sector-code">Setor 2 · Próximo passo</span></div>
+                <h3>Desenvolvedor Júnior</h3>
+                <p>
+                  Consolidar boas práticas como desenvolvedor full stack, aprofundar React e
+                  acessibilidade e entregar projetos com foco em performance e usabilidade real.
+                </p>
+                <div class="sector-cols">
+                  <div>
+                    <h4>Soft skills em foco</h4>
+                    <ul>
+                      <li>Colaboração com o time</li>
+                      <li>Pensamento crítico</li>
+                      <li>Gestão de tempo e prioridades</li>
+                    </ul>
+                  </div>
+                  <div class="road">
+                    <h4>Roadmap</h4>
+                    <ul>
+                      <li>Flutter</li>
+                      <li>WCAG e acessibilidade</li>
+                      <li>TypeScript</li>
+                      <li>RESTful API</li>
+                      <li>DevOps na Azure e esteiras CI/CD</li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+              <article class="sector" data-at="0.52">
+                <div class="sector-top"><span class="sector-code">Setor 3 · Médio prazo</span></div>
+                <h3>Desenvolvedor Pleno</h3>
+                <p>
+                  Construir APIs REST sobre uma base bem estruturada, trabalhar com testes e contribuir em
+                  decisões de arquitetura e UX.
+                </p>
+                <div class="sector-cols">
+                  <div>
+                    <h4>Soft skills em foco</h4>
+                    <ul>
+                      <li>Colaboração com times multidisciplinares</li>
+                      <li>Gestão de tempo e prioridades</li>
+                      <li>Mentoria de colegas iniciantes</li>
+                    </ul>
+                  </div>
+                  <div class="road">
+                    <h4>Roadmap</h4>
+                    <ul>
+                      <li>Next.js + SSR</li>
+                      <li>Testes automatizados</li>
+                      <li>PostgreSQL</li>
+                      <li>Docker</li>
+                      <li>Pipelines CI/CD na Azure</li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+              <article class="sector" data-at="0.72">
+                <div class="sector-top"><span class="sector-code">Setor 4 · Futuro</span></div>
+                <h3>Desenvolvedor Sênior</h3>
+                <p>
+                  Liderar soluções escaláveis, participar de decisões estratégicas de arquitetura e tornar
+                  os produtos mais acessíveis, inclusivos e modernos.
+                </p>
+                <div class="sector-cols">
+                  <div>
+                    <h4>Soft skills em foco</h4>
+                    <ul>
+                      <li>Liderança técnica</li>
+                      <li>Decisão estratégica</li>
+                      <li>Visão sistêmica de produto</li>
+                      <li>Comunicação com stakeholders</li>
+                    </ul>
+                  </div>
+                  <div class="road">
+                    <h4>Roadmap</h4>
+                    <ul>
+                      <li>Pipelines CI/CD avançados</li>
+                      <li>TDD</li>
+                      <li>Clean Architecture</li>
+                      <li>Mensageria e GraphQL</li>
+                      <li>Cloud (Azure)</li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+              <article class="sector" data-at="0.92">
+                <div class="sector-top"><span class="sector-code">Bandeirada · Longo prazo</span></div>
+                <h3>Arquiteto de Software</h3>
+                <p>
+                  Desenhar arquiteturas robustas, sustentáveis e acessíveis, com foco em IA aplicada,
+                  escalabilidade e integração entre times técnicos e de produto.
+                </p>
+                <div class="sector-cols">
+                  <div>
+                    <h4>Soft skills em foco</h4>
+                    <ul>
+                      <li>Visão de produto e negócio</li>
+                      <li>Arquitetura de soluções escaláveis</li>
+                      <li>Influência técnica e cultural</li>
+                      <li>Liderança em inovação</li>
+                    </ul>
+                  </div>
+                  <div class="road">
+                    <h4>Roadmap</h4>
+                    <ul>
+                      <li>IA aplicada: RAG e LLMs</li>
+                      <li>Bancos vetoriais</li>
+                      <li>Workspaces e ambientes temporários (sandboxes)</li>
+                      <li>Event-Driven Architecture</li>
+                      <li>Domain-Driven Design</li>
+                      <li>Cloud architecture</li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="ticker alt" aria-hidden="true" style="margin-top: 4rem">
+        <div class="ticker-track" data-speed="-0.8">
+          <span>Azure</span><span>DevOps</span><span>CI/CD</span><span>Flutter</span><span>Spring</span
+          ><span>RESTful API</span><span>WCAG</span><span>Clean Architecture</span><span>Next.js</span
+          ><span>Azure</span><span>DevOps</span><span>CI/CD</span><span>Flutter</span><span>Spring</span
+          ><span>RESTful API</span><span>GraphQL</span><span>Kafka</span><span>Clean Architecture</span
+          ><span>Next.js</span>
+        </div>
+      </div>
+      <section class="sec" id="skills">
+        <div class="wrap">
+          <div class="sec-head">
+            <div>
+              <span class="eyebrow">Tecnologias</span>
+              <h2 style="margin-top: 1rem">Hard<br />skills</h2>
+            </div>
+            <p class="lead">
+              Quanto mais luzes acesas, maior a afinidade com a tecnologia. É uma autoavaliação.
+            </p>
+          </div>
+          <div class="tele" id="tele"></div>
+          <div class="legend mono">
+            <span><i style="background: #5be37a"></i>Base</span
+            ><span><i style="background: var(--volt)"></i>Confortável</span
+            ><span><i style="background: var(--red)"></i>Domínio</span
+            ><span><i style="background: #6aa4ff"></i>Limite</span>
+          </div>
+        </div>
+      </section>
+      <section class="sec" id="formacao" style="padding-top: 0">
+        <div class="wrap">
+          <div class="sec-head">
+            <div>
+              <span class="eyebrow">Formação</span>
+              <h2 style="margin-top: 1rem">Formação</h2>
+            </div>
+            <p class="lead">
+              Do técnico em automação até a FIAP, sempre complementando com cursos intensivos.
+            </p>
+          </div>
+          <div class="edu">
+            <div class="edu-item main">
+              <span class="mono">Tecnólogo · Em curso</span>
+              <h3>Análise e Desenvolvimento de Sistemas</h3>
+              <p>FIAP · Faculdade de Informática e Administração Paulista</p>
+            </div>
+            <div class="edu-item">
+              <span class="mono">Profissionalizante · 2025</span>
+              <h3>Desenvolvimento Web · Java</h3>
+              <p>Instituto Proa · Programa PROPROFISSÃO</p>
+            </div>
+            <div class="edu-item">
+              <span class="mono">Curso técnico</span>
+              <h3>Automação Industrial</h3>
+              <p>Etec Martin Luther King</p>
+            </div>
+          </div>
+          <div class="courses">
+            <ul class="course-list">
+              <li>JavaScript Completo ES6<span>74h</span></li>
+              <li>Java Completo: Programação Orientada a Objetos<span>54h</span></li>
+              <li>HTML e CSS para Iniciantes<span>46h</span></li>
+              <li>React Completo<span>36h</span></li>
+              <li>HTTP: Entendendo a Web por Debaixo dos Panos<span>10h</span></li>
+              <li>Java: Trabalhando com Listas e Coleções de Dados<span>8h</span></li>
+              <li>Java: Criando Sua Primeira Aplicação<span>8h</span></li>
+              <li>Algoritmos: Aprenda a Programar<span>80h</span></li>
+              <li>Formação Social e Sustentabilidade<span>80h</span></li>
+              <li>Jovens Líderes<span>40h</span></li>
+              <li>Modelagem de Dados<span>8h</span></li>
+              <li>Excel<span>8h</span></li>
+            </ul>
+            <div class="lang">
+              <span class="eyebrow">Idiomas</span><b>Inglês</b
+              ><span class="mono" style="color: var(--mute)">Básico</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contato">
+        <div class="wrap">
+          <span class="eyebrow">Contato</span>
+          <h2 style="margin-top: 1.4rem">
+            <span class="o">Bora</span><br />conversar<span class="v">?</span>
+          </h2>
+          <div class="contact-row">
+            <div style="display: grid; gap: 0.8rem">
+              <p style="color: var(--mute); max-width: 46ch">
+                Estou aberto a novos projetos e oportunidades. Manda um e-mail ou me chama no LinkedIn.
+              </p>
+              <div class="mail">
+                <span class="mail-addr" id="mail">dev.renanpaulino@gmail.com</span>
+                <button class="btn magnet" id="copyBtn" type="button">Copiar e-mail</button>
+              </div>
+              <span class="copy-msg" id="copyMsg" aria-live="polite"></span>
+            </div>
+            <div class="socials">
+              <a
+                class="btn ghost magnet"
+                href="https://www.linkedin.com/in/renansilvapaulino/"
+                target="_blank"
+                rel="noopener"
+                >LinkedIn ↗</a
+              >
+              <a
+                class="btn ghost magnet"
+                href="https://github.com/devRenanPaulino"
+                target="_blank"
+                rel="noopener"
+                >GitHub ↗</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="wrap mono">
+        <span>© 2026 Renan Paulino · Feito em São Paulo</span>
+        <button class="top" id="toTop" type="button">Voltar ao grid ↑</button>
+      </footer>
+    </main>
+
+    <dialog class="pm" id="projectModal" aria-labelledby="pmTitle">
+      <div class="pm-panel" data-lenis-prevent>
+        <button class="pm-close" type="button" aria-label="Fechar" data-pm-close>✕</button>
+        <div class="pm-body" id="pmBody"></div>
+      </div>
+    </dialog>
+
+    <script src="js/file-warning.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/MotionPathPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

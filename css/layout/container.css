@@ -1,0 +1,6 @@
+/* Container central com gutter responsivo. */
+.wrap {
+  padding-inline: var(--gutter);
+  max-width: 1480px;
+  margin-inline: auto;
+}

@@ -1,0 +1,40 @@
+/* Estilos tipográficos globais e utilitários de texto. */
+.mono {
+  font-family: var(--f-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.eyebrow {
+  font-family: var(--f-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--volt);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.eyebrow::before {
+  content: "";
+  width: 22px;
+  height: 2px;
+  background: currentColor;
+}
+h1,
+h2,
+h3 {
+  font-family: var(--f-display);
+  text-transform: uppercase;
+  line-height: 0.88;
+  margin: 0;
+  text-wrap: balance;
+  font-weight: 900;
+  letter-spacing: 0.005em;
+}
+h2 {
+  font-size: clamp(3.2rem, 10vw, 9rem);
+}
+p {
+  margin: 0;
+}

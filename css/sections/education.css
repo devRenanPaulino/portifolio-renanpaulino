@@ -1,0 +1,98 @@
+/* Formação e cursos. */
+/* formação */
+.edu {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+.edu-item {
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 1.5rem;
+  display: grid;
+  gap: 0.8rem;
+  align-content: start;
+  background: var(--ink-2);
+  transition:
+    transform 0.4s,
+    border-color 0.3s;
+}
+.edu-item:hover {
+  transform: translateY(-6px);
+  border-color: var(--volt);
+}
+.edu-item .mono {
+  color: var(--volt);
+}
+.edu-item h3 {
+  font-size: clamp(1.8rem, 2.6vw, 2.4rem);
+  line-height: 0.95;
+}
+.edu-item p {
+  color: var(--mute);
+  font-size: 0.92rem;
+}
+.edu-item.main {
+  grid-column: span 1;
+  background: var(--volt);
+  color: var(--volt-ink);
+  border-color: var(--volt);
+}
+.edu-item.main .mono,
+.edu-item.main p {
+  color: var(--volt-ink);
+}
+.courses {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 0.6fr);
+  gap: 2rem;
+}
+.course-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  columns: 2;
+  column-gap: 2rem;
+}
+.course-list li {
+  break-inside: avoid;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 0.65rem;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.95rem;
+}
+.course-list li span {
+  font-family: var(--f-mono);
+  color: var(--mute);
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.lang {
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 1.4rem;
+  display: grid;
+  gap: 0.6rem;
+  align-content: start;
+}
+.lang b {
+  font-family: var(--f-display);
+  font-size: 2.4rem;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+@media (max-width: 860px) {
+  .edu {
+    grid-template-columns: 1fr;
+  }
+  .courses {
+    grid-template-columns: 1fr;
+  }
+  .course-list {
+    columns: 1;
+  }
+}

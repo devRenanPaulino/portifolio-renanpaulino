@@ -1,0 +1,57 @@
+/* Contato. */
+/* contato */
+.contact {
+  padding-block: clamp(6rem, 14vw, 12rem) 2rem;
+  text-align: left;
+}
+.contact h2 {
+  font-size: clamp(4rem, 15vw, 14rem);
+  line-height: 0.82;
+}
+.contact h2 .o {
+  color: transparent;
+  -webkit-text-stroke: 2px var(--bone);
+}
+.contact h2 .v {
+  color: var(--volt);
+}
+.contact-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 2rem;
+  align-items: end;
+  margin-top: 3rem;
+}
+.mail {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+.mail-addr {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: clamp(1.6rem, 4vw, 3.2rem);
+  text-transform: lowercase;
+  user-select: all;
+  word-break: break-all;
+  border-bottom: 2px solid var(--volt);
+  line-height: 1.1;
+}
+.socials {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+.copy-msg {
+  font-family: var(--f-mono);
+  font-size: 0.72rem;
+  color: var(--volt);
+  letter-spacing: 0.08em;
+  min-height: 1em;
+}
+@media (max-width: 760px) {
+  .contact-row {
+    grid-template-columns: 1fr;
+  }
+}

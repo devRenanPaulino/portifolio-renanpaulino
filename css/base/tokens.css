@@ -1,0 +1,21 @@
+/* Design tokens: cores, tipografia e espaçamento. Mude a identidade visual aqui. */
+/* Layout: noite de corrida em Interlagos — nomes gigantes, pista como linha do tempo, telemetria como dado */
+:root {
+  --ink: #0d0f0b; /* asfalto */
+  --ink-2: #151912; /* box */
+  --ink-3: #1e2419;
+  --line: #2b3324;
+  --bone: #eef0e6; /* texto */
+  --mute: #8a917f;
+  --dim: #5d6553; /* texto ainda não revelado */
+  --volt: #d4ff2a; /* neon do capacete */
+  --volt-ink: #101400;
+  --plum: #8b3bea; /* Vivo */
+  --red: #ff4d3d;
+  --f-display: "Big Shoulders Display", "Arial Narrow", Impact, sans-serif;
+  --f-body: "Manrope", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --f-hand: "Permanent Marker", "Segoe Print", "Bradley Hand", cursive;
+  --gutter: clamp(16px, 4vw, 56px);
+  color-scheme: dark;
+}

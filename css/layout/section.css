@@ -1,0 +1,22 @@
+/* Espaçamento e cabeçalho padrão das seções. */
+section {
+  position: relative;
+}
+main {
+  overflow-x: clip;
+}
+.sec {
+  padding-block: clamp(5rem, 12vw, 10rem);
+}
+.sec-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1.5rem 3rem;
+  margin-bottom: clamp(2.5rem, 6vw, 5rem);
+}
+.sec-head .lead {
+  max-width: 420px;
+  color: var(--mute);
+}

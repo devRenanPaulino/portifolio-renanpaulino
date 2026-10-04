@@ -1,0 +1,186 @@
+/* Ilustrações em CSS dos cards de projeto. */
+/* arte dos projetos */
+.a-eleven {
+  background: #0b1220;
+}
+.a-eleven::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(120, 170, 255, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(120, 170, 255, 0.12) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+.a-eleven b {
+  position: absolute;
+  right: -4%;
+  bottom: -18%;
+  font-family: var(--f-display);
+  font-weight: 900;
+  font-size: clamp(12rem, 20vw, 19rem);
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 2px #7aa8ff;
+}
+.a-eleven i {
+  position: absolute;
+  left: 8%;
+  top: 22%;
+  width: 44%;
+  height: 44%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #c8e0ff, #4b7cff 40%, #1b2a6b 75%);
+  filter: blur(0.5px);
+  box-shadow: 0 0 80px rgba(75, 124, 255, 0.55);
+}
+.a-raiz {
+  background: radial-gradient(120% 90% at 50% 110%, #1f4d2a, #0d1a10 70%);
+}
+.a-raiz svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.a-rivalix {
+  background: linear-gradient(135deg, #1a0710, #2b0b1e 50%, #0c0612);
+}
+.a-rivalix::before {
+  content: "";
+  position: absolute;
+  inset: -20%;
+  background: repeating-linear-gradient(
+    115deg,
+    transparent 0 38px,
+    rgba(255, 60, 90, 0.14) 38px 40px
+  );
+}
+.a-rivalix b {
+  position: absolute;
+  left: 8%;
+  bottom: 10%;
+  font-family: var(--f-display);
+  font-weight: 900;
+  font-size: clamp(5rem, 8vw, 7.5rem);
+  line-height: 0.8;
+  color: #ff3c5a;
+  transform: skewX(-12deg);
+  text-shadow: 6px 6px 0 #4a0d2a;
+}
+.a-rivalix i {
+  position: absolute;
+  right: 10%;
+  top: 14%;
+  width: 34%;
+  aspect-ratio: 1;
+  max-width: 100%;
+  border: 3px solid #ff3c5a;
+  transform: rotate(45deg);
+}
+.a-bik {
+  background: #16130e;
+}
+.a-bik i {
+  position: absolute;
+  top: 50%;
+  width: 46%;
+  aspect-ratio: 1;
+  max-width: 100%;
+  border-radius: 50%;
+  border: 10px solid #e8b04b;
+  transform: translateY(-50%);
+}
+.a-bik i::after {
+  content: "";
+  position: absolute;
+  inset: 18%;
+  border-radius: 50%;
+  border: 2px dashed rgba(232, 176, 75, 0.6);
+}
+.a-bik i:nth-child(1) {
+  left: 2%;
+}
+.a-bik i:nth-child(2) {
+  right: 2%;
+}
+.a-bik b {
+  position: absolute;
+  left: 28%;
+  right: 28%;
+  top: 38%;
+  height: 4px;
+  background: #e8b04b;
+  transform: rotate(-14deg);
+}
+.a-mapa {
+  background: #0f120c;
+}
+.a-mapa svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* MS Sandbox Manager: bolhas de conversa + rota da API */
+.a-sandbox {
+  background: linear-gradient(160deg, #07140f, #0c2018 60%, #06100c);
+}
+.a-sandbox::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(47, 209, 122, 0.2) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+.a-sandbox code {
+  position: absolute;
+  left: 18%;
+  top: 9%;
+  font-family: var(--f-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  color: #2fd17a;
+  background: rgba(47, 209, 122, 0.12);
+  border: 1px solid rgba(47, 209, 122, 0.35);
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+.a-sandbox .bubble {
+  position: absolute;
+  height: 13%;
+  border-radius: 16px;
+}
+.a-sandbox .bubble.in {
+  left: 18%;
+  background: #1b2d26;
+  border: 1px solid #2a4a3c;
+}
+.a-sandbox .bubble.out {
+  right: 18%;
+  background: #2fd17a;
+}
+.a-sandbox .b1 {
+  top: 30%;
+  width: 40%;
+}
+.a-sandbox .b2 {
+  top: 50%;
+  width: 34%;
+}
+.a-sandbox .b3 {
+  top: 70%;
+  width: 26%;
+}
+
+.a-arq {
+  background: radial-gradient(120% 90% at 50% 0%, #1b2210, #0d0f0b 70%);
+}
+.a-arq svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}

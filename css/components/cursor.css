@@ -1,0 +1,66 @@
+/* Cursor personalizado (apenas em dispositivos com mouse). */
+/* cursor */
+.cursor,
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 100;
+  border-radius: 50%;
+  display: none;
+}
+.has-cursor .cursor,
+.has-cursor .cursor-dot {
+  display: block;
+}
+.cursor {
+  width: 38px;
+  height: 38px;
+  margin: -19px 0 0 -19px;
+  border: 1.5px solid var(--volt);
+  display: grid;
+  place-items: center;
+  transition:
+    width 0.3s,
+    height 0.3s,
+    margin 0.3s,
+    background 0.3s,
+    border-color 0.3s;
+}
+.cursor span {
+  font-family: var(--f-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--volt-ink);
+  opacity: 0;
+  transition: opacity 0.2s;
+  letter-spacing: 0.1em;
+}
+.cursor.is-link {
+  width: 64px;
+  height: 64px;
+  margin: -32px 0 0 -32px;
+  background: rgba(212, 255, 42, 0.12);
+}
+.cursor.is-view {
+  width: 96px;
+  height: 96px;
+  margin: -48px 0 0 -48px;
+  background: var(--volt);
+  border-color: var(--volt);
+}
+.cursor.is-view span {
+  opacity: 0;
+}
+.cursor-dot {
+  width: 6px;
+  height: 6px;
+  margin: -3px 0 0 -3px;
+  background: var(--volt);
+}
+.has-cursor,
+.has-cursor a,
+.has-cursor button {
+  cursor: none;
+}

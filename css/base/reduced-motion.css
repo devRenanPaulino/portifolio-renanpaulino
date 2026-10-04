@@ -1,0 +1,12 @@
+/* Respeita quem prefere menos movimento. Deve ser o último import. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+  .grain {
+    display: none;
+  }
+}

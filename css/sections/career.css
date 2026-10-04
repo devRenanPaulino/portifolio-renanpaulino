@@ -1,0 +1,210 @@
+/* Mapa de carreira no circuito. */
+/* carreira */
+.career {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: clamp(2rem, 5vw, 5rem);
+}
+.circuit {
+  position: sticky;
+  top: 0;
+  height: 100svh;
+  display: grid;
+  place-items: center;
+  padding-block: 90px 30px;
+}
+.circuit svg {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  max-height: calc(100svh - 140px);
+  overflow: visible;
+}
+.circuit .track-base {
+  fill: none;
+  stroke: var(--ink-3);
+  stroke-width: 22;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.circuit .track-edge {
+  fill: none;
+  stroke: var(--line);
+  stroke-width: 1.5;
+  stroke-dasharray: 6 6;
+}
+.circuit .track-prog {
+  fill: none;
+  stroke: var(--volt);
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: drop-shadow(0 0 8px rgba(212, 255, 42, 0.6));
+}
+.circuit .kerb {
+  fill: none;
+  stroke-width: 22;
+  stroke-dasharray: 6 6;
+  stroke: var(--red);
+  opacity: 0.55;
+}
+.circuit text {
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  fill: var(--mute);
+  text-transform: uppercase;
+}
+.circuit .sector-dot circle {
+  fill: var(--ink);
+  stroke: var(--mute);
+  stroke-width: 2;
+  transition:
+    fill 0.3s,
+    stroke 0.3s;
+}
+.circuit .sector-dot text {
+  fill: var(--bone);
+  font-weight: 700;
+  font-size: 11px;
+}
+.circuit .sector-dot.on circle {
+  fill: var(--volt);
+  stroke: var(--volt);
+}
+.circuit .sector-dot.on text {
+  fill: var(--volt);
+}
+.circuit .finish rect {
+  fill: var(--bone);
+}
+.circuit-hud {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  display: grid;
+  gap: 0.2rem;
+}
+.circuit-hud b {
+  font-family: var(--f-display);
+  font-size: 3.2rem;
+  line-height: 0.9;
+  font-weight: 900;
+  font-variant-numeric: tabular-nums;
+}
+.sectors {
+  display: grid;
+  gap: clamp(3rem, 10vh, 7rem);
+  padding-block: clamp(2rem, 20vh, 14rem);
+}
+.sector {
+  border-top: 1px solid var(--line);
+  padding-top: 1.6rem;
+  display: grid;
+  gap: 1.3rem;
+  opacity: 0.45;
+  transition: opacity 0.5s;
+}
+.sector.on {
+  opacity: 1;
+}
+.sector-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.sector-code {
+  font-family: var(--f-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  color: var(--volt);
+  text-transform: uppercase;
+}
+.here {
+  font-family: var(--f-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: var(--volt);
+  color: var(--volt-ink);
+  padding: 0.35rem 0.65rem;
+  border-radius: 4px;
+  font-weight: 700;
+  display: inline-flex;
+  gap: 0.45rem;
+  align-items: center;
+}
+.sector h3 {
+  font-size: clamp(2.8rem, 6vw, 5.6rem);
+}
+.sector > p {
+  color: #c9cdbf;
+  max-width: 58ch;
+}
+.sector-cols {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.4rem;
+}
+.sector-cols h4 {
+  margin: 0 0 0.6rem;
+  font-family: var(--f-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mute);
+  font-weight: 500;
+}
+.sector-cols ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.35rem;
+  font-size: 0.95rem;
+}
+.sector-cols li {
+  display: flex;
+  gap: 0.6rem;
+  align-items: baseline;
+}
+.sector-cols li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  flex: none;
+  background: var(--volt);
+  transform: translateY(-2px) rotate(45deg);
+}
+.road li::before {
+  background: transparent;
+  border: 1.5px solid var(--volt);
+}
+@media (max-width: 900px) {
+  .career {
+    grid-template-columns: 1fr;
+  }
+  .circuit {
+    position: sticky;
+    top: 0;
+    height: auto;
+    z-index: 2;
+    background: linear-gradient(var(--ink) 80%, transparent);
+    padding-block: 70px 1rem;
+  }
+  .circuit svg {
+    max-width: 220px;
+    max-height: 34svh;
+  }
+  .circuit-hud {
+    display: none;
+  }
+  .sectors {
+    padding-block: 1rem 4rem;
+  }
+  .sector-cols {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,92 @@
+/* Seção Sobre. */
+/* sobre */
+.about {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);
+  gap: clamp(2rem, 6vw, 6rem);
+  align-items: start;
+}
+.manifesto {
+  font-family: var(--f-display);
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: clamp(2rem, 4.6vw, 4.2rem);
+  line-height: 0.98;
+  letter-spacing: 0.005em;
+}
+.manifesto .w {
+  color: var(--dim);
+  transition: color 0.2s;
+}
+.manifesto .w.hl {
+  color: var(--volt);
+}
+.about-body {
+  display: grid;
+  gap: 1.1rem;
+  margin-top: 2.5rem;
+  max-width: 62ch;
+  color: #c9cdbf;
+}
+.about-side {
+  display: grid;
+  gap: 1.5rem;
+  position: sticky;
+  top: 110px;
+}
+.stage {
+  position: relative;
+}
+.stage img {
+  width: 100%;
+  max-width: 440px;
+}
+.stage .tag {
+  position: absolute;
+  left: -0.6rem;
+  bottom: 12%;
+  background: var(--bone);
+  color: var(--ink);
+  font-family: var(--f-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.45rem 0.7rem;
+  font-weight: 700;
+  transform: rotate(-4deg);
+}
+.about-card {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 1.3rem;
+  display: grid;
+  gap: 0.9rem;
+  background: var(--ink-2);
+}
+.about-card dl {
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.55rem 1rem;
+  font-size: 0.95rem;
+}
+.about-card dt {
+  color: var(--mute);
+  font-family: var(--f-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding-top: 0.25rem;
+}
+.about-card dd {
+  margin: 0;
+}
+@media (max-width: 900px) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+  .about-side {
+    position: relative;
+    top: 0;
+  }
+}

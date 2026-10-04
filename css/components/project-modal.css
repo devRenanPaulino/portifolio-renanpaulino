@@ -1,0 +1,186 @@
+/* Modal de projeto: links, contexto e autocrítica. */
+.pm {
+  width: min(960px, calc(100vw - 2rem));
+  max-height: calc(100svh - 2rem);
+  margin: auto;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: var(--ink-2);
+  color: var(--bone);
+  overflow: hidden;
+}
+.pm::backdrop {
+  background: rgba(8, 10, 6, 0.78);
+  backdrop-filter: blur(6px);
+}
+.pm[open] {
+  animation: pm-in 0.35s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.pm[open]::backdrop {
+  animation: pm-fade 0.3s ease;
+}
+@keyframes pm-in {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.98);
+  }
+}
+@keyframes pm-fade {
+  from {
+    opacity: 0;
+  }
+}
+/* o cursor personalizado fica atrás do modal, então voltamos ao cursor normal aqui */
+.has-cursor .pm,
+.has-cursor .pm a,
+.has-cursor .pm button {
+  cursor: auto;
+}
+.has-cursor .pm a,
+.has-cursor .pm button {
+  cursor: pointer;
+}
+.pm-panel {
+  position: relative;
+  max-height: calc(100svh - 2rem);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: clamp(1.4rem, 4vw, 2.8rem);
+}
+.pm-close {
+  position: sticky;
+  top: 0;
+  float: right;
+  z-index: 2;
+  width: 2.6rem;
+  height: 2.6rem;
+  margin: -0.6rem -0.6rem 0 0.5rem;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: var(--ink-3);
+  color: var(--bone);
+  font-size: 1rem;
+  transition:
+    border-color 0.2s,
+    color 0.2s;
+}
+.pm-close:hover,
+.pm-close:focus-visible {
+  border-color: var(--volt);
+  color: var(--volt);
+}
+.pm-body {
+  display: grid;
+  gap: 1.1rem;
+}
+.pm h3 {
+  font-size: clamp(2.4rem, 6vw, 4.4rem);
+  line-height: 0.9;
+}
+.pm h4 {
+  font-family: var(--f-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--volt);
+  margin-bottom: 0.9rem;
+}
+.pm-lead {
+  font-size: clamp(1rem, 1.6vw, 1.18rem);
+  line-height: 1.55;
+  max-width: 62ch;
+}
+.pm-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+.pm-context,
+.pm-evo {
+  color: var(--mute);
+  line-height: 1.6;
+  max-width: 70ch;
+}
+.pm-evo b {
+  color: var(--volt);
+  font-weight: 700;
+}
+.pm-cols {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.6rem;
+  margin-top: 0.6rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid var(--line);
+}
+@media (min-width: 800px) {
+  .pm-cols {
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 2.4rem;
+  }
+}
+.pm ul,
+.pm ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.8rem;
+}
+.pm-good li,
+.pm-steps li {
+  position: relative;
+  padding-left: 1.4rem;
+  line-height: 1.5;
+}
+.pm-good li::before,
+.pm-steps li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 7px;
+  height: 7px;
+  background: var(--volt);
+  transform: rotate(45deg);
+}
+.pm-steps li::before {
+  background: transparent;
+  border: 1px solid var(--volt);
+}
+.pm-todo {
+  counter-reset: todo;
+}
+.pm-todo li {
+  counter-increment: todo;
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.9rem 1rem 0.9rem 3rem;
+  position: relative;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--ink-3);
+}
+.pm-todo li::before {
+  content: counter(todo, decimal-leading-zero);
+  position: absolute;
+  left: 1rem;
+  top: 0.95rem;
+  font-family: var(--f-mono);
+  font-size: 0.75rem;
+  color: var(--volt);
+}
+.pm-todo b {
+  font-weight: 700;
+}
+.pm-todo span {
+  color: var(--mute);
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+.pm-next {
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--line);
+}

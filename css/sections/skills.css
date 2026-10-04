@@ -1,0 +1,85 @@
+/* Hard skills em luzes de troca. */
+/* telemetria */
+.tele {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem 3rem;
+}
+.gauge {
+  display: grid;
+  grid-template-columns: minmax(0, 9rem) minmax(0, 1fr) 3.4rem;
+  gap: 1rem;
+  align-items: center;
+  padding-block: 1rem;
+  border-bottom: 1px solid var(--line);
+}
+.gauge .name {
+  font-family: var(--f-display);
+  font-weight: 800;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.lights {
+  display: grid;
+  grid-template-columns: repeat(20, minmax(0, 1fr));
+  gap: 3px;
+  height: 20px;
+}
+.lights i {
+  background: var(--ink-3);
+  border-radius: 2px;
+  transition:
+    background 0.25s,
+    box-shadow 0.25s;
+}
+.lights i.on.g {
+  background: #5be37a;
+  box-shadow: 0 0 8px rgba(91, 227, 122, 0.5);
+}
+.lights i.on.v {
+  background: var(--volt);
+  box-shadow: 0 0 8px rgba(212, 255, 42, 0.5);
+}
+.lights i.on.r {
+  background: var(--red);
+  box-shadow: 0 0 8px rgba(255, 77, 61, 0.6);
+}
+.lights i.on.b {
+  background: #6aa4ff;
+  box-shadow: 0 0 8px rgba(106, 164, 255, 0.6);
+}
+.gauge .pct {
+  font-family: var(--f-mono);
+  font-size: 0.95rem;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin-top: 1.4rem;
+  color: var(--mute);
+}
+.legend span {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.legend i {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+}
+@media (max-width: 860px) {
+  .tele {
+    grid-template-columns: 1fr;
+  }
+  .gauge {
+    grid-template-columns: minmax(0, 6.5rem) minmax(0, 1fr) 3rem;
+  }
+  .gauge .name {
+    font-size: 1.3rem;
+  }
+}
