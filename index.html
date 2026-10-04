@@ -20,6 +20,7 @@
   </head>
 
   <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
     <div class="grain" aria-hidden="true"></div>
     <div class="cursor" aria-hidden="true"><span>VER</span></div>
     <div class="cursor-dot" aria-hidden="true"></div>
@@ -56,7 +57,7 @@
     </header>
 
     <main id="topo">
-      <section class="hero">
+      <section class="hero" id="conteudo" tabindex="-1">
         <div class="wrap">
           <div class="hero-grid">
             <h1 class="hero-name" aria-label="Renan Paulino">
@@ -782,11 +783,12 @@
           </div>
         </div>
       </section>
-      <footer class="wrap mono">
-        <span>© 2026 Renan Paulino · Feito em São Paulo</span>
-        <button class="top" id="toTop" type="button">Voltar ao grid ↑</button>
-      </footer>
     </main>
+
+    <footer class="wrap mono">
+      <span>© 2026 Renan Paulino · Feito em São Paulo</span>
+      <button class="top" id="toTop" type="button">Voltar ao grid ↑</button>
+    </footer>
 
     <dialog class="pm" id="projectModal" aria-labelledby="pmTitle">
       <div class="pm-panel" data-lenis-prevent>
@@ -801,5 +803,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/MotionPathPlugin.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
     <script type="module" src="js/main.js"></script>
+    <!-- Widget de acessibilidade gratuito (MIT): fonte para dislexia, contraste, tamanho do texto, etc. -->
+    <script src="https://cdn.jsdelivr.net/npm/sienna-accessibility@2.2.333" defer></script>
   </body>
 </html>

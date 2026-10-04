@@ -1,0 +1,41 @@
+/* Acessibilidade: link "pular para o conteúdo", foco e preferências do sistema. */
+.skip-link {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 1000;
+  padding: 0.7rem 1.1rem;
+  background: var(--volt);
+  color: var(--volt-ink);
+  font-family: var(--f-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 6px;
+  transform: translateY(-200%);
+}
+.skip-link:focus {
+  transform: none;
+}
+/* A barra some ao rolar; quem navega por teclado precisa vê-la quando o foco entra nela. */
+.nav:focus-within {
+  transform: none;
+}
+[tabindex="-1"]:focus {
+  outline: none;
+}
+@media (forced-colors: active) {
+  :focus-visible {
+    outline: 2px solid Highlight;
+  }
+}
+@media (prefers-contrast: more) {
+  :root {
+    --mute: #b4bba8;
+    --line: #4a5540;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+}

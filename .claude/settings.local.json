@@ -14,7 +14,13 @@
       "Bash(node --check js/animations/career.js)",
       "Bash(node /tmp/h.mjs)",
       "Bash(sed -i 's/padding-block: 90svh;/padding-block: 150svh 160svh;/' css/sections/career.css)",
-      "Bash(sed -i 's/innerHeight \\\\* 1.7}/innerHeight * 1.35}/; s/innerHeight \\\\* 0.55}/innerHeight * 0.5}/' js/animations/career.js)"
+      "Bash(sed -i 's/innerHeight \\\\* 1.7}/innerHeight * 1.35}/; s/innerHeight \\\\* 0.55}/innerHeight * 0.5}/' js/animations/career.js)",
+      "Bash(npm view *)",
+      "Bash(curl -s https://data.jsdelivr.com/v1/package/npm/sienna-accessibility@2.2.333/flat)",
+      "Bash(node /tmp/a.mjs)",
+      "Bash(node --check js/animations/smooth-scroll.js)",
+      "Bash(cd /tmp)",
+      "Bash(curl -sL https://cdn.jsdelivr.net/npm/sienna-accessibility@2.2.333 -o s.js)"
     ]
   }
 }

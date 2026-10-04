@@ -33,4 +33,5 @@
 @import url("sections/contact.css");
 
 /* Acessibilidade (sempre por último) */
+@import url("base/accessibility.css");
 @import url("base/reduced-motion.css");

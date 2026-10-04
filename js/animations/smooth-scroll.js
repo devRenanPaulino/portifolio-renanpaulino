@@ -18,6 +18,7 @@ export function initSmoothScroll() {
       const target = id === "#topo" ? 0 : $(id);
       if (target === null) return;
       e.preventDefault();
+      if (target !== 0) target.focus?.({ preventScroll: true });
       lenis.scrollTo(target, { offset: id === "#projetos" ? 0 : -40, duration: 1.4 });
     });
   });
